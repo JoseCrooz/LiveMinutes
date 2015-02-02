@@ -1,0 +1,461 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styles */
+body{
+  overflow: hidden;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#globals{
+  position: absolute;
+  width: 487px;
+  height: 310px;
+  top: 35px;
+  left: 101px;
+	opacity: 0;
+}
+
+#home-btn{
+	position: absolute;
+	top: 50px;
+	left: 146px;
+	opacity: 0;
+}
+
+#overlay{
+  position: absolute;
+  top: 13px;
+  left: 83px;
+	opacity: 0;
+}
+
+#laptop{
+  position: absolute;
+	top: 0;
+  width: 701px;
+  height: 402px;
+	opacity: 0;
+}
+
+#ripple{
+	position: absolute;
+	top: 55px;
+	left: 146px;
+	opacity: 0;
+}
+
+#rippleImg{
+	position: absolute;
+	width: 22px;
+	height: 22px;
+}
+
+#pointer{
+	position: absolute;
+	top: 220px;
+	left: 210px;
+	opacity: 0;
+}
+
+/*
+ * Storytelling
+*/
+#storytelling{
+  position: absolute;
+  top: 85px;
+  left: 230px;
+}
+
+#doc-title{
+	position: absolute;
+	top: -31px;
+	left: -63px;
+	opacity: 0;
+}
+
+#doc-tools{
+  position: absolute;
+  top: -37px;
+  left: 98px;
+	opacity: 0;
+}
+
+#st-img{
+  position: absolute;
+  top: 15px;
+  opacity: 0;
+}
+
+#comment1{
+  position: absolute;
+  top: 53px;
+  left: 287px;
+  opacity: 0;
+}
+
+#blue-dots{
+  position: absolute;
+  top: 53px;
+  left: 33px;
+  width: 0;
+  overflow: hidden;
+}
+
+#blue-shadow{
+  position: absolute;
+  top: 49px;
+  left: 29px;
+  opacity: 0;
+}
+
+#blue-pin{
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  opacity: 0;
+}
+
+#comment2{
+  position: absolute;
+  top: 133px;
+  left: 287px;
+  opacity: 0;
+}
+
+#green-dots{
+  position: absolute;
+  top: 133px;
+  left: 208px;
+  width: 0;
+  overflow: hidden;
+}
+
+#green-shadow{
+  position: absolute;
+  top: 130px;
+  left: 203px;
+  opacity: 0;
+}
+
+#green-pin{
+  position: absolute;
+  top: 100px;
+  left: 201px;
+  opacity: 0;
+}
+
+/*
+ * Notes
+*/
+#notes{
+  position: absolute;
+  width: 100%;
+  top: 74px;
+  left: 227px;
+  opacity: 0;
+}
+
+#note-title{
+	position: absolute;
+	top: -20px;
+	left: -60px;
+	opacity: 0;
+}
+
+#note-tools{
+	position: absolute;
+	top: -27px;
+	left: 60px;
+	opacity: 0;
+}
+
+#highlight1{
+  position: absolute;
+  top: 134px;
+  left: 13px;
+  width: 0;
+  height: 11px;
+  background: #fbcedd;
+}
+
+#highlight2{
+  position: absolute;
+  top: 145px;
+  left: 13px;
+  width: 271px;
+  height: 0;
+  background: #fbcedd;
+}
+
+#copy{
+  position: absolute;
+  padding: 15px;
+	opacity: 0;
+}
+
+#top-text{
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  font-family: Helvetica;
+  font-size: 11px;
+  color: #434343;
+	opacity: 0;
+}
+
+#text1{opacity: 0;}
+#text2{opacity: 0;}
+#text3{opacity: 0;}
+#text4{opacity: 0;}
+#text5{opacity: 0;}
+#text6{opacity: 0;}
+#text7{opacity: 0;}
+#text8{opacity: 0;}
+#text9{opacity: 0;}
+#text10{opacity: 0;}
+#text11{opacity: 0;}
+#text12{opacity: 0;}
+#text13{opacity: 0;}
+#text14{opacity: 0;}
+#text15{opacity: 0;}
+
+#cursors{
+	position: absolute;
+	opacity: 0;
+}
+
+#cursor1{
+  position: absolute;
+  border-right:1px solid #6bc794;
+  height: 15px;
+  opacity: 0;
+  top: 47px;
+  left: 215px;
+}
+
+#cursor2{
+  position: absolute;
+  border-right:1px solid #d1577f;
+  height: 15px;
+  opacity: 0;
+  top: 130px;
+  left: 13px;
+}
+
+#cursor3{
+  position: absolute;
+  border-right:1px solid #43a3dc;
+  height: 15px;
+  opacity: 0;
+  top: 183px;
+  left: 104px;
+}
+
+#tom{
+  position: absolute;
+  top: 60px;
+  left: 215px;
+	opacity: 0;
+}
+
+#clara{
+  position: absolute;
+  top: 145px;
+  left: 13px;
+	opacity: 0;
+}
+
+/*
+ * Workspace Lobby
+*/
+#lobby{
+  position: absolute;
+  top: 74px;
+  left: 227px;
+  opacity: 0;
+}
+
+#lobby-title{
+	position: absolute;
+	top: -20px;
+	left: -84px;
+	opacity: 0;
+}
+
+#lobby-tools{
+	position: absolute;
+	top: -26px;
+	left: 80px;
+	opacity: 0;
+}
+
+#presentation{
+  position: absolute;
+  top: 12px;
+  left: 98px;
+  opacity: 0;
+}
+
+#todo{
+  position: absolute;
+  top: 12px;
+  left: 13px;
+	opacity: 0;
+}
+
+#design{
+  position: absolute;
+  top: 12px;
+  left: 98px;
+	opacity: 0;
+}
+
+#mockup{
+  position: absolute;
+  top: 12px;
+  left: 182px;
+	opacity: 0;
+}
+
+#nextsteps{
+  position: absolute;
+  top: 12px;
+  left: 268px;
+	opacity: 0;
+}
+
+#newdocument{
+  position: absolute;
+  top: 115px;
+  left: 13px;
+	opacity: 0;
+}
+
+/*
+ * Call popup
+ */
+#call-popup{
+	position: absolute;
+	top: 48px;
+	left: 101px;
+	opacity: 0;
+}
+
+/*
+ * Audio waves
+ */
+ul{
+	position: absolute;
+	margin-left: 5px;
+}
+
+li{
+	position: relative;
+	list-style: none;
+	width: 3px;
+	height: 20px;
+	float: left;
+	top: 27px;
+}
+
+li:nth-child(n+2){
+	margin-left: 1px;
+}
+
+#wave1{
+	position: absolute;
+	width: 25px;
+	height: 26px;
+	top: 66px;
+	left: 111px;
+	background: rgba(255,255,255, 0.6);
+	overflow: hidden;
+	opacity: 0;
+}
+
+#wave1 li{
+	background: #178ed4;
+}
+
+#wave2{
+	position: absolute;
+	width: 25px;
+	height: 26px;
+	top: 107px;
+	left: 111px;
+	background: rgba(255,255,255, 0.6);
+	overflow: hidden;
+	opacity: 0;
+}
+
+#wave2 li{
+	background: #6bc794;
+}
+
+#wave3{
+	position: absolute;
+	width: 25px;
+	height: 27px;
+	top: 148px;
+	left: 111px;
+	background: rgba(255,255,255, 0.6);
+	overflow: hidden;
+	opacity: 0;
+}
+
+#wave3 li{
+	background: #d1577f;
+	margin-top: 1px;
+} 
